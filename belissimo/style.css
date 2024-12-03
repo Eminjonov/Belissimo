@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(0 0 0 / 0%);
+}
+
+a {
+  text-decoration: none;
+  white-space: normal;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Logo qismi */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Info qismi */
+.info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+  color: #555;
+  margin-right: 250px;
+  gap: 50px;
+}
+
+.info .status {
+  color: green;
+}
+
+.info .city strong {
+  color: #007bff;
+}
+
+/* Harakatlar qismi */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions .lang,
+.actions .login {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions .lang {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.actions .halal-logo {
+  height: 60px;
+}
+
+.actions .login {
+  background-color: #047857;
+  padding: 11px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btnn {
+  height: 48px;
+  gap: 8px;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--success-green-50, #ecfdf5);
+  border: none;
+  color: #047857;
+  font-weight: 600;
+}
+
+.btn1 {
+  background-color: #ecfdf5;
+  border: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 13px 15px;
+  max-width: 200px;
+  font-size: 11px;
+}
+
+.span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #047857;
+}
+
+.carousel {
+  margin-top: 20px !important;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  min-width: 100%;
+  text-align: center;
+  background: lightblue;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+button.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.item img {
+  width: 100%; /* Karusel kengligiga moslashadi */
+  height: auto; /* Proportsiyani saqlaydi */
+  display: block; /* Har qanday bo‘sh joyni yo‘q qiladi */
+}
+
+.delivery-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Tugmalar uslubi */
+.toggle-buttons {
+  width: 50%;
+  display: flex;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.btn {
+  width: 50%;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Manzil qutisi */
+.address-box {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ffd700;
+  border-radius: 20px;
+  background-color: #fffbea;
+  color: #ffd700;
+  font-size: 14px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.address-text {
+  flex-grow: 1;
+}
+
+.edit-icon {
+  font-size: 16px;
+  color: #ffd700;
+}
+
+.btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns-left button {
+  padding: 5px 15px;
+  border-radius: 100px;
+  background: #f4f4f4;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+  border: none;
+  font-size: 16px;
+}
+
+.btns-left button:hover {
+  background: rgba(0, 111, 76, 0.25);
+}
+
+.btns-right button {
+  padding: 8px 12px;
+  background: #ff002b;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btns-right button:hover {
+  padding: 8px 18px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.kombo {
+  margin-top: 20px;
+  background-color: #fff;
+  gap: 20px;
+  border-radius: 0px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.kombo-flex {
+  width: 300px;
+  -webkit-box-shadow: 0px 1px 11px 4px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 0px 1px 11px 4px rgba(34, 60, 80, 0.15);
+  box-shadow: 0px 1px 11px 4px rgba(34, 60, 80, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.kombo-flex:hover {
+    transform: scale(1.07);
+}
+
+.kombo-menu-img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000000;
+  margin: 15px 0 10px;
+}
+
+.p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  text-decoration: none;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.kombo-menu-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.discount {
+  background-color: #ff002b;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  margin-right: 92px;
+  font-weight: 600;
+}
+
+.new-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.h3 {
+    font-size: 20px !important;
+  font-weight: 100
+  ;
+}
+
+.new-price-pizza {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

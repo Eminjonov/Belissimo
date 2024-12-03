@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Logo qismi */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Info qismi */
+.info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+  color: #555;
+  margin-right: 250px;
+  gap: 50px;
+}
+
+.info .status {
+  color: green;
+}
+
+.info .city strong {
+  color: #007bff;
+}
+
+/* Harakatlar qismi */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions .lang,
+.actions .login {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions .lang {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.actions .halal-logo {
+  height: 60px;
+}
+
+.actions .login {
+  background-color: #047857;
+  padding: 11px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btnn {
+  height: 48px;
+  gap: 8px;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--success-green-50, #ecfdf5);
+  border: none;
+  color: #047857;
+  font-weight: 600;
+}
+
+.btn1 {
+  background-color: #ecfdf5;
+  border: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 13px 15px;
+  max-width: 200px;
+  font-size: 11px;
+}
+
+.span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #047857;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.containerr {
+   
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.item {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item button {
+    width: 400px;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.select-button {
+  font-size: 16px;
+  color: #06c167;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: -110px;
+  padding-left: 100px;
+  
+}
+
+.select-button:hover {
+  text-decoration: underline;
+  
+}
+
+
+.price-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.old-price .line-through {
+  text-decoration: line-through;
+  font-size: 16px;
+  color: #999;
+}
+
+.new-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.add-to-cart {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px;
+  background-color: #ddd;
+  color: #999;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+.add-to-cart:hover {
+  background-color: #ccc;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .select-button {
+  /* padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; */
+/* } */ */
+
+.select-button:hover {
+  background-color: #ffffff;
+}
+
+/* Modal dizayni */
+.modal {
+display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+
